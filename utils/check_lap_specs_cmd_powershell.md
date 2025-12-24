@@ -102,10 +102,6 @@ $$
 ### Wear Level
 This calculates how much of the battery capacity has been lost permanently.
 
-$$
-\text{Wear Level \%} = 100\% - \text{Health \%}
-$$
-
 ### Example Calculation
 Based on previous data (75.6% Health):
 
@@ -114,8 +110,7 @@ $$
 $$
 
 ### Alternative Direct Calculation
-You can also calculate wear level directly using the capacity difference:
-
+\
 $$
 \text{Wear Level \%} = \left( \frac{\text{Design Capacity} - \text{Full Charge Capacity}}{\text{Design Capacity}} \right) \times 100
 $$
