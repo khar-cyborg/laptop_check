@@ -1,9 +1,4 @@
-```markdown
-# Windows Folder Locker
-
----
-
-## Windows Folder Locker Tools
+### Windows Folder Locker Tools
 
 Below are two methods to hide folders on Windows. One uses system attributes, and the other uses an interactive Batch script.
 
@@ -11,8 +6,6 @@ Below are two methods to hide folders on Windows. One uses system attributes, an
 > * A knowledgeable user can still find these files.
 > * Anyone can edit the script to view the password.
 > * Do not use this for sensitive financial or personal data.
-> 
-> 
 
 ### Method 1: The "Invisible" Attribute (Simple)
 
@@ -110,6 +103,3 @@ goto End
 4. Run it a third time and enter your password to **unlock** it.
 
 ```
-
-***
-
