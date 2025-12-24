@@ -1,13 +1,11 @@
 ### Windows Folder Locker Tools
 
-Below are two methods to hide folders on Windows. One uses system attributes, and the other uses an interactive Batch script.
-
 > **⚠️ SECURITY WARNING** > These methods provide **visual privacy only**. They are **not** encrypted.
 > * A knowledgeable user can still find these files.
 > * Anyone can edit the script to view the password.
 > * Do not use this for sensitive financial or personal data.
 
-### Method 1: The "Invisible" Attribute (Simple)
+###  1: The "Invisible" Attribute (Simple)
 
 This method hides a folder from the standard Explorer view using the command line.
 
@@ -26,7 +24,7 @@ attrib -h -s "MySecretFolder"
 
 ```
 
-### Method 2: Password Protected Locker (Script)
+###  2: Password Protected Locker (Script)
 
 This script creates a folder named `PrivateFolder`. When locked, it renames the folder to a Windows Class ID (CLSID) and applies system attributes to hide it.
 
@@ -102,4 +100,30 @@ goto End
 3. Run `locker.bat` again to **lock** it (Type `Y`).
 4. Run it a third time and enter your password to **unlock** it.
 
-```
+# Windows Hidden Tricks
+
+## 3. "God Mode" (Master Control Panel)
+This creates a single folder that contains links to *every* setting in Windows—over 200 distinct administrative tools in one list. It feels very "hacker-ish" to set up.
+
+### How to do it:
+1.  **Right-click** on your desktop and select **New** > **Folder**.
+2.  Rename the folder to the following code exactly (copy and paste the line below):
+    
+    `GodMode.{ED7BA470-8E54-465E-825C-99712043E01C}`
+
+3.  Press **Enter**.
+4.  The folder icon will change to a control panel icon. Open it to access everything.
+
+---
+
+## 4. The "Invisible" Folder
+You can create a folder on your desktop that has no name and no icon, effectively making it invisible to anyone who doesn't know where it is.
+
+### How to do it:
+1.  Create a **New Folder**.
+2.  **Right-click** it and select **Rename**.
+3.  Hold down the **Alt** key and type `0160` on your number pad (the numbers on the right side of your keyboard), then release **Alt** and press **Enter**.
+    * *Note: This types a "blank" character.*
+4.  **Right-click** the folder again > **Properties** > **Customize** tab > **Change Icon...**
+5.  Scroll to the right until you see blank/empty spaces in the icon list. Select one of them and click **OK**.
+6.  Click **OK** again. The folder is now invisible until you hover over it or highlight it.
