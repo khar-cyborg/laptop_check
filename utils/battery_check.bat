@@ -7,7 +7,7 @@ echo       ANALYZING BATTERY CONDITION...
 echo ==================================================
 echo.
 
-:: 1. Generate the report using Windows Power Config
+:: 1. Generate the report using Windows Power Config   
 powercfg /batteryreport /output "battery_report.html"
 
 :: 2. Check if the file was created successfully

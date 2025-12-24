@@ -3,7 +3,7 @@ title Power Menu
 color 3f
 :menu
 cls
-echo ====================================
+echo ====================================   
 echo        SYSTEM POWER CONTROLS
 echo ====================================
 echo [1] Shutdown Immediately

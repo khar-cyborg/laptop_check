@@ -39,5 +39,5 @@ echo =================================================
 echo.
 pause
 
-:: 5. Open the file automatically
+:: 5. Open the file automatically   
 start %REPORT_FILE%

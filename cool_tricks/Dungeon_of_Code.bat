@@ -7,7 +7,7 @@ mode con: cols=60 lines=25
 cls
 echo.
 echo.
-:: Fixed the sword art below by adding ^ before every |
+:: Fixed the sword art below by adding ^ before every |  
 echo       /^| ________________
 echo   O^|===^|* ^>________________^>
 echo       \^|

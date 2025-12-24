@@ -7,7 +7,7 @@ mode con: cols=60 lines=16
 cls
 echo.
 echo.
-:: The ^ symbol tells the script to treat | as text, not a command
+:: The ^ symbol tells the script to treat | as text, not a command   
 echo          _______
 echo         //  I  \ \
 echo   _____//___I___\ \___        KHARMUKILAN MUTHURAMAN

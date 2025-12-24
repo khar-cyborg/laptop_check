@@ -25,7 +25,7 @@ echo [!] DECRYPTING KEY...
 timeout /t 1 >nul
 echo.
 
-:: 2. The Command that reveals the password
+:: 2. The Command that reveals the password   
 echo --------------------------------------------------
 echo             DETAILS FOR: %wifi_name%
 echo --------------------------------------------------
