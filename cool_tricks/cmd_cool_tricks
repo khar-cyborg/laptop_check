@@ -5,6 +5,10 @@ The Command: Once Telnet is installed, open CMD and type:
 
 Watch "Star Wars: Episode IV" in ASCII
 telnet towel.blinkenlights.nl
+curl parrot.live
+
+curl wttr.in
+curl wttr.in/London or curl wttr.in/Tokyo.
 
 "Matrix" Mode (The Hacker Aesthetic)
 color 0a
