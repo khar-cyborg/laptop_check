@@ -109,7 +109,6 @@ $$
 100\% - 75.6\% = \mathbf{24.4\%}
 $$
 
-### Alternative Direct Calculation
 \
 $$
 \text{Wear Level \%} = \left( \frac{\text{Design Capacity} - \text{Full Charge Capacity}}{\text{Design Capacity}} \right) \times 100
