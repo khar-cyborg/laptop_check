@@ -105,9 +105,6 @@ This calculates how much of the battery capacity has been lost permanently.
 ### Example Calculation
 Based on previous data (75.6% Health):
 
-$$
-100\% - 75.6\% = \mathbf{24.4\%}
-$$
 
 \
 $$
