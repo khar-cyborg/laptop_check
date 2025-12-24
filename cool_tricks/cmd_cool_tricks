@@ -1,107 +1,157 @@
-The Prerequisite: By default, the "Telnet" client is disabled in modern Windows. You must enable it first:
-Press Windows Key + R, type optionalfeatures, and hit Enter.
-Scroll down to Telnet Client, check the box, and click OK.
-The Command: Once Telnet is installed, open CMD and type:
 
-Watch "Star Wars: Episode IV" in ASCII
+# 💻 Windows CMD: Tricks, Pranks & Utilities
+
+
+
+---
+
+## 1. Productivity & Shortcuts
+
+**Keyboard History (The "Pro" Trick)**
+
+* **F7:** Opens a pop-up ASCII window showing your command history. Use arrow keys to select.
+* **Up Arrow:** Repeats the last command (standard).
+
+**Essential Shortcuts**
+
+* **Tab:** Auto-completes file or folder names. (Cycle through options by hitting Tab repeatedly).
+* **F3:** Instantly pastes the last command you typed.
+* **Esc:** Clears the current line.
+* **Ctrl + C:** The **Panic Button**. Forces any running command (like a ping loop or tree) to stop immediately.
+
+**Send Output to Clipboard**
+Save the output of *any* command to your clipboard instead of showing it on screen.
+
+```cmd
+[command] | clip
+
+```
+
+*(Example: `dir | clip` copies the file list to your clipboard).*
+
+---
+
+**Color Codes Reference**
+Use `color [Background][Text]` (e.g., `color 0A` is Black background, Green text).
+
+| Code | Color | Code | Color |
+| --- | --- | --- | --- |
+| **0** | Black | **A** | Light Green |
+| **1** | Blue | **B** | Light Aqua |
+| **2** | Green | **C** | Light Red |
+| **4** | Red | **E** | Light Yellow |
+| **7** | White | **F** | Bright White |
+
+---
+
+## 2. Prerequisites: Enable Telnet
+
+Many of the "fun" ASCII commands require the Telnet client, which is disabled by default in modern Windows.
+
+1. Press **Windows Key + R**.
+2. Type `optionalfeatures` and hit **Enter**.
+3. Scroll down to **Telnet Client**, check the box, and click **OK**.
+
+---
+
+## 3. Fun & ASCII Art
+
+Once Telnet is enabled, try these commands to watch movies or see animations in text format.
+
+**Watch "Star Wars: Episode IV"**
+
+```cmd
 telnet towel.blinkenlights.nl
+
+```
+
+**Party Parrot Animation**
+
+```cmd
 curl parrot.live
 
-curl wttr.in
-curl wttr.in/London or curl wttr.in/Tokyo.
+```
 
-"Matrix" Mode (The Hacker Aesthetic)
+**Weather Reports**
+
+```cmd
+curl wttr.in
+curl wttr.in/London
+curl wttr.in/Tokyo
+
+```
+
+**Telehack (The Text-Based Web)**
+Connect to a retro simulator:
+
+```cmd
+telnet telehack.com
+
+```
+
+* **Once connected, try typing:**
+* `cowsay Hello` (Make a cow talk)
+* `starwars` (Watch the movie here too)
+* `aquarium` (See an ASCII ocean)
+
+
+
+---
+
+## 4. The "Hacker" Aesthetic & Pranks
+
+**"Matrix" Mode**
+Change the text to green and list all files rapidly to look busy.
+
+```cmd
 color 0a
 cls
 dir /s
 
-Create a Fake "Virus" Prank
-shutdown -s -t 60 -c "CRITICAL ERROR: VIRUS DETECTED. SYSTEM DELETION IMMINENT."
-How to save yourself (The Abort Command): To stop the shutdown, quickly type:
-shutdown -a
+```
 
-Customize Your Prompt :
-prompt Gemini is watching $g
-Add timestamps (The useful one):
-prompt $t $p$g
-Reset to default:
-prompt
+**Change Window Title**
 
-The Visual Tree
-tree
-
-Keyboard History Window (F7)
-Most people use the Up Arrow to repeat the last command, but there is a better way.
-The Trick: Press F7.
-Result: A pop-up ASCII window appears right inside the terminal showing your history of typed commands. You can use arrow keys to select and run one.
-
-Send Output to Clipboard
-
-Code,Color,Code,Color
-0,Black,A,Light Green
-1,Blue,B,Light Aqua
-2,Green,C,Light Red
-4,Red,E,Light Yellow
-7,White,F,Bright White
-
-
+```cmd
 title Hacking the Mainframe
 
+```
 
-telnet telehack.com
-Result: You are connected to a text-based "web."
-Type cowsay Hello to make a cow talk.
-Type starwars to watch the movie here too.
-Type aquarium to see an ASCII ocean.
+**Create a Fake "Virus" Prank**
+This initiates a shutdown countdown with a custom message.
 
+```cmd
+shutdown -s -t 60 -c "CRITICAL ERROR: VIRUS DETECTED. SYSTEM DELETION IMMINENT."
 
-Keyboard "Pro" Shortcuts
-Stop typing everything out. Use these keys while inside CMD:
+```
 
-Tab: The most important key. Type the first letter of a file or folder (e.g., cd D) and hit Tab. It will auto-complete the name for you. Keep hitting Tab to cycle through options.
-F3: Instantly pastes the last command you typed.
-Esc: Clears the current line you are typing.
-Ctrl + C: The "Panic Button." If a command is running too long (like the Matrix script), this forces it to stop immediately.
+> **⚠️ How to save yourself (The Abort Command):**
+> To stop the shutdown immediately, type:
+> ```cmd
+> shutdown -a
+> 
+> ```
+> 
+> 
 
+---
 
-The "Process Killer"
-tasklist
-What it does: Shows every program running (including hidden ones), similar to Task Manager but text-based.
-taskkill /f /im notepad.exe
-What it does: Forcefully kills a program. Replace notepad.exe with whatever program is frozen.
-When to use: When a fullscreen game crashes and you can't even open Task Manager to close it.
+## 5. Customization & Visuals
 
+**Customize Your Prompt**
 
+* **Change to "Gemini is watching >":** `prompt Gemini is watching $g`
+* **Add Timestamps (Useful!):** `prompt $t $p$g`
+* **Reset to default:** `prompt`
 
+**Visual Tree**
+See a graphical map of your folders.
 
-The "Software Installer" (New Windows 10/11 Feature)
-winget search "app name" and winget install "app name"
+```cmd
+tree
 
-What it does: A built-in package manager. You can install software without opening a web browser.
-
-Try this: winget install VLC or winget install Discord.
-
-When to use: Setting up a new PC. You can install 10 apps in one go with one command.
-
-
-2. The "WiFi & Network" Masters
-ipconfig /all
-What it does: ipconfig gives basic info, but /all gives you everything: your MAC address, DNS servers, and detailed connection info.
-When to use: When setting up advanced network filters or troubleshooting why the internet is down.
-ping google.com -t
-What it does: Standard ping checks connection once. Adding -t makes it ping forever until you stop it (Ctrl+C).
-When to use: Crucial for testing WiFi stability. Run this and walk around your house with a laptop to see where the "dead zones" are (watch for "Request timed out").
-netstat -an
-What it does: Lists every active connection your computer has to the internet.
-When to use: Security. If you see a connection to a suspicious IP address when you aren't doing anything, you might have malware.
+```
 
 
-The "Is My Computer Broken?" Commands
-sfc /scannow
-What it does: The "System File Checker." It scans Windows for corrupted or missing system files and automatically tries to repair them.
-When to use: If Windows is acting weird, crashing, or giving blue screens.
-Note: This usually requires running CMD as Administrator.
-chkdsk /f
-What it does: "Check Disk." It scans your hard drive for errors and bad sectors. The /f flag tells it to fix them.
-When to use: If files are disappearing or your drive feels slow/noisy.
-Warning: This might ask to restart your computer to run.
+
+
