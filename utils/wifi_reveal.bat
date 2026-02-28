@@ -35,4 +35,14 @@ echo --------------------------------------------------
 echo.
 echo Note: If "Key Content" is missing, you are not Admin.
 echo.
-pause
+
+:prompt_again
+set "choice="
+set /p choice="Do you want to check another Wi-Fi network? (Y/N): "
+if /I "%choice%"=="Y" (
+    echo.
+    goto ask
+)
+if /I "%choice%"=="N" exit /b
+echo Invalid choice. Please enter Y or N.
+goto prompt_again
