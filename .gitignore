@@ -1,0 +1,20 @@
+# Generated HTML reports (auto-created by scripts)
+battery_report.html
+System_Report.html
+gaming_report.html
+
+# Windows system files
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Temporary files
+*.tmp
+*.temp
+~$*
+
+# Editor artifacts
+.vscode/
+.idea/
+*.swp
+*.swo
